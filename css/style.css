@@ -1,0 +1,267 @@
+header, body, nav, main, footer, ul {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #444444;
+}
+/*Header style*/
+header {
+    text-align: center;
+    font-size: 1em;
+    padding: 2%;
+    background-color: gray
+}
+
+
+/*image styles*/
+img {
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+
+.round {
+    border-radius: 5%;
+}
+
+/*Font style*/
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-family: "Roboto Mono", monospace;
+}
+
+h3 {
+    font-family: "Roboto Mono", monospace;
+}
+
+
+/*Hide tab-desk*/
+.tab-desk {
+    display: none;
+}
+
+
+/*Style for the navigation*/
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #001F3F;
+}
+
+nav li {
+    display: block;
+    border-top: 1px solid #e5e9fc;
+    font-size: 2em;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    
+}
+
+main {
+    background: linear-gradient(to top right, blue, #1E90FF);
+    padding: 10px;
+    color: lightgray;
+}
+
+/*style for home page*/
+
+
+/*style for about page*/
+.my-pic {
+    max-height: 480px;
+    max-width: 300px;
+}
+
+#get-em a {
+    color: black;
+}
+
+/*style for projects page*/
+.projects {
+    display: block;
+    text-align: center;
+}
+
+.projects img {
+        height: 234px;
+        width: 378px;
+    }
+
+h3 {
+    display: block;
+    padding: 3%;
+    text-align: center;
+    margin: 3%;
+    background-color: #5F6267;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+/*Style for contact page*/
+#contact {
+    display: block;
+    text-align: center;
+}
+
+#contact a{
+    display: block;
+    padding: 3%;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    background-color: #C0C0C0;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+/*footer*/
+
+footer {
+    background-color: #444444;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+@media screen and (min-width: 481px), print {
+    
+    
+    /* hide/display content*/
+    .tab-desk {
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    /*header*/
+    header {
+        font-size: 1.5em;
+    }
+    
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.5em;
+        border-right: 1px solid #e5e9fc;
+    }
+    
+    nav li:last-child {
+        border-right: none;
+    }
+    
+    nav li a {
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    
+    /*about */
+    #about {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        justify-content: center;
+    }
+    
+    
+    /*projects*/
+    .projects {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        justify-content: center;
+    }
+    
+    .projects p {
+        background: #5F6267;
+        border-radius: 5%;
+        padding: 5%;
+        margin: 5%;
+    }
+    
+    
+    .projects img {
+        height: 234px;
+        width: 300px;
+    }
+    
+    /*contact*/
+    #contact a {
+        display: block;
+        padding: 3%;
+        text-align: center;
+        margin: 10%;
+        width: 80%;
+        background-color: #C0C0C0;
+        border-radius: 15px;
+        text-decoration: none;
+        color: black;
+}
+}
+
+@media screen and (min-width: 1024px), print {
+    
+    /*nav*/
+    nav li a:hover {
+        background-color: #fff;
+        color: #001F3F;
+        
+    }
+    
+    /*projects*/
+    .projects {
+        display: flex;
+    }
+    
+    .projects img {
+        height: 234px;
+        width: 300px;
+    }
+    
+    .projects p {
+        background: #5F6267;
+        border-radius: 5%;
+        padding: 5%;
+        margin: 5%;
+    }
+    
+    /*contact*/
+    /*contact*/
+    #contact a {
+        display: block;
+        padding: 3%;
+        font-size: 2em;
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        background-color: #C0C0C0;
+        border-radius: 15px;
+        text-decoration: none;
+        color: black;
+}
+}
